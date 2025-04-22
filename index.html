@@ -18,27 +18,27 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      color: #f0f0f0;
+      background: linear-gradient(135deg, #fefae0, #e0f7fa);
+      color: #333;
       line-height: 1.6;
     }
 
     nav a.active {
-      border-bottom: 2px solid #fff;
-      color: #ffd700;
+      border-bottom: 2px solid #333;
+      color: #0288d1; /* azul cielo */
     }
 
     header {
       position: relative;
       height: 350px;
-      background: url('https://images.unsplash.com/photo-1604079628045-e3b1e4c8d3e2?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
     }
 
     header::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(255, 255, 255, 0.6);
       z-index: 1;
     }
 
@@ -46,7 +46,7 @@
       position: relative;
       z-index: 2;
       text-align: center;
-      color: white;
+      color: #1a1a1a;
       padding: 4rem 1rem;
     }
 
@@ -61,7 +61,7 @@
     }
 
     nav {
-      background: rgba(18, 38, 77, 0.7);
+      background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(6px);
       display: flex;
       justify-content: center;
@@ -72,7 +72,7 @@
     }
 
     nav a {
-      color: #fff;
+      color: #333;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
@@ -90,19 +90,19 @@
 
     h2 {
       font-size: 2rem;
-      color: #ffd700;
+      color: #0288d1; /* azul cielo */
       margin-bottom: 1rem;
-      border-left: 4px solid #ffd700;
+      border-left: 4px solid #0288d1;
       padding-left: 0.5rem;
     }
 
     .project, .experience, .cert {
-      background: rgba(255, 255, 255, 0.08);
+      background: #ffffffcc; /* blanco translúcido */
       padding: 1.5rem;
       margin-bottom: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(3px);
       transition: transform 0.2s ease-in-out;
     }
 
@@ -115,12 +115,12 @@
     }
 
     a {
-      color: #ffd700;
+      color: #0288d1;
     }
 
     footer {
       text-align: center;
-      background: #1e3c72;
+      background: #0288d1;
       color: #fff;
       padding: 2rem;
       margin-top: 2rem;
