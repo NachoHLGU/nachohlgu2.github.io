@@ -1,72 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ignacio Díaz | Computer Science Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignacio Diaz | Computer Science Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e3c72;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #12264d;
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #1e3c72;
+      margin-bottom: 1rem;
+      border-left: 4px solid #1e3c72;
+      padding-left: 0.5rem;
+    }
+
+    .project, .experience, .cert {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .project:hover, .experience:hover, .cert:hover {
+      transform: scale(1.02);
+    }
+
+    ul {
+      padding-left: 2rem;
+    }
+
+    a {
+      color: #1e3c72;
+    }
+
+    footer {
+      text-align: center;
+      background: #1e3c72;
+      color: #fff;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="overlay">
-      <h1>Ignacio Díaz</h1>
-      <p>Computer Science Student | Cybersecurity | Software Development</p>
-    </div>
+    <h1>Ignacio Díaz</h1>
+    <p>Computer Science Student | Cybersecurity | Full Stack Developer</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certs">Certifications</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate Computer Science student with strong foundations in cybersecurity,
-        network architecture, and software development. My projects reflect both my creativity
-        and technical problem-solving ability. I strive to innovate and build tools that matter.
-      </p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student at HLGU with a strong interest in cybersecurity, web development, and network architecture. My academic projects include configuring hardened Ubuntu servers, creating 3D animations in Unreal Engine, and building secure networking topologies.</p>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>🛡️ Cybersecurity Lab</h3>
-        <p>Hardened an Ubuntu Server 22.04 using CIS Level 1 Benchmarks and scanned with OpenSCAP.</p>
-      </div>
-      <div class="project">
-        <h3>🌐 Networking Game Simulation</h3>
-        <p>Designed a secure network system using VLANs, firewalls, and Cisco devices for gamified simulation.</p>
-      </div>
-      <div class="project">
-        <h3>🎮 Star Wars 3D Animation</h3>
-        <p>Built a 3D cinematic in Unreal Engine set in the Star Wars universe as a capstone project.</p>
-      </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🛡️ Cybersecurity Lab</h3>
+      <p>Hardened Ubuntu Server 22.04 using CIS Benchmarks, SSH hardening, and OpenSCAP compliance scanning. Documented all red flags and applied remediations.</p>
+    </div>
+    <div class="project">
+      <h3>🌐 Networking Game Project</h3>
+      <p>Designed a network simulation using Cisco routers, VLANs, and firewall zones. Earned rewards through securing virtual machines and simulating network attacks.</p>
+    </div>
+    <div class="project">
+      <h3>🎮 Unreal Engine Star Wars Animation</h3>
+      <p>Developed a 3D animated sequence in the Star Wars universe using Unreal Engine. Included modeling, lighting, cinematic camera work, and animation sequencing.</p>
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: Python, Java, C++, HTML/CSS</li>
-        <li>Systems: Linux (Ubuntu, Kali), Windows</li>
-        <li>Tools: Git/GitHub, VirtualBox, Cisco Packet Tracer</li>
-        <li>3D & Game Dev: Unreal Engine, Blender</li>
-      </ul>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, Java, JavaScript, C++</li>
+      <li>Web Development: HTML, CSS, React, Node.js</li>
+      <li>Cybersecurity: Linux Hardening, Penetration Testing, OpenSCAP</li>
+      <li>Networking: Cisco IOS, VLANs, Firewalls</li>
+      <li>Tools: Git, GitHub, Kali Linux, Metasploit, Wireshark</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: ignacio@example.com</p>
-      <p>GitHub: <a href="https://github.com/ignacio">github.com/ignacio</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/ignacio">linkedin.com/in/ignacio</a></p>
-    </section>
-  </main>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>Intern - IT Support (Summer 2024)</h3>
+      <p>Worked in an enterprise environment providing Tier 1 support, managing Active Directory accounts, and assisting in system patching processes.</p>
+    </div>
+    <div class="experience">
+      <h3>Computer Science Tutor (2023–2025)</h3>
+      <p>Tutored peers in programming, databases, and systems administration. Helped students grasp topics like recursion, normalization, and subnetting.</p>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <div class="cert">
+      <h3>CompTIA Security+ (Expected June 2025)</h3>
+      <p>Studying core principles of risk management, cryptography, and threat detection.</p>
+    </div>
+    <div class="cert">
+      <h3>Cisco CCNA (In Progress)</h3>
+      <p>Focused on routing and switching fundamentals, network security, and troubleshooting.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ignacio@example.com</p>
+    <p>GitHub: <a href="https://github.com/ignacio" target="_blank">github.com/ignacio</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ignacio" target="_blank">linkedin.com/in/ignacio</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Ignacio Díaz</p>
+    <p>&copy; 2025 Ignacio Díaz | Designed with ❤️ using HTML & CSS</p>
   </footer>
 </body>
 </html>
