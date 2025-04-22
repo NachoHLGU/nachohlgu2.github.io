@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  nav a.active {
-  border-bottom: 2px solid #fff;
-  color: #ffd700;
-}
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ignacio Diaz | Computer Science Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     html {
-  scroll-behavior: smooth;
-}
+      scroll-behavior: smooth;
+    }
 
     * {
       box-sizing: border-box;
@@ -22,34 +17,58 @@
     }
 
     body {
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  color: #fff;
-  line-height: 1.6;
-}
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
 
+    nav a.active {
+      border-bottom: 2px solid #fff;
+      color: #ffd700;
+    }
 
     header {
-      background-color: #1e3c72;
-      color: #fff;
-      padding: 3rem 1rem;
+      position: relative;
+      height: 350px;
+      background: url('https://images.unsplash.com/photo-1604079628045-e3b1e4c8d3e2?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header div {
+      position: relative;
+      z-index: 2;
       text-align: center;
+      color: white;
+      padding: 4rem 1rem;
     }
 
     header h1 {
       font-size: 3rem;
+      font-weight: bold;
     }
 
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
 
     nav {
-      background: #12264d;
+      background: rgba(18, 38, 77, 0.7);
+      backdrop-filter: blur(6px);
       display: flex;
       justify-content: center;
       padding: 0.75rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
@@ -71,18 +90,19 @@
 
     h2 {
       font-size: 2rem;
-      color: #1e3c72;
+      color: #ffd700;
       margin-bottom: 1rem;
-      border-left: 4px solid #1e3c72;
+      border-left: 4px solid #ffd700;
       padding-left: 0.5rem;
     }
 
     .project, .experience, .cert {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.08);
       padding: 1.5rem;
       margin-bottom: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
       transition: transform 0.2s ease-in-out;
     }
 
@@ -95,7 +115,7 @@
     }
 
     a {
-      color: #1e3c72;
+      color: #ffd700;
     }
 
     footer {
@@ -108,25 +128,22 @@
   </style>
 </head>
 <body>
-  <header style="position: relative; height: 350px; background: url('https://images.unsplash.com/photo-1604079628045-e3b1e4c8d3e2?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;">
-  <div style="position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
-  <div style="position: relative; z-index: 2; text-align: center; color: white; padding: 4rem 1rem;">
-    <h1 style="font-size: 3rem; font-weight: bold;">Ignacio Díaz</h1>
-    <p style="font-size: 1.2rem; margin-top: 1rem;">Computer Science Student | Cybersecurity | Full Stack Developer</p>
-  </div>
-</header>
 
+  <header>
+    <div>
+      <h1>Ignacio Díaz</h1>
+      <p>Computer Science Student | Cybersecurity | Full Stack Developer</p>
+    </div>
+  </header>
 
-
-<nav style="background: rgba(18, 38, 77, 0.7); backdrop-filter: blur(6px); display: flex; justify-content: center; padding: 0.75rem; position: sticky; top: 0; z-index: 10;">
-  <a href="#about" style="color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold;">About</a>
-  <a href="#projects" style="color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold;">Projects</a>
-  <a href="#skills" style="color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold;">Skills</a>
-  <a href="#experience" style="color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold;">Experience</a>
-  <a href="#certs" style="color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold;">Certifications</a>
-  <a href="#contact" style="color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold;">Contact</a>
-</nav>
-
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="about">
     <h2>About Me</h2>
@@ -194,28 +211,28 @@
   <footer>
     <p>&copy; 2025 Ignacio Díaz | Designed with ❤️ using HTML & CSS</p>
   </footer>
+
   <script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
 
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id");
-      }
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
     });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-
+  </script>
 </body>
 </html>
