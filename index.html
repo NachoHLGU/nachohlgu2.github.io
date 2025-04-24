@@ -125,6 +125,36 @@
       padding: 2rem;
       margin-top: 2rem;
     }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #e0e0e0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      backdrop-filter: blur(3px);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .skill-card small {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: normal;
+      color: #b0bec5;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.03);
+    }
   </style>
 </head>
 <body>
@@ -154,7 +184,7 @@
     <h2>Projects</h2>
     <div class="project">
       <h3>🖨️ 3D Printing</h3>
-      <p>I am actively developing my 3D printing skills through hands-on experience with diverse filaments, print settings, and model design, aiming to enhance both technical precision and creative output..</p>
+      <p>I am actively developing my 3D printing skills through hands-on experience with diverse filaments, print settings, and model design, aiming to enhance both technical precision and creative output.</p>
     </div>
     <div class="project">
       <h3>🛡️ Cybersecurity Lab</h3>
@@ -172,15 +202,15 @@
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>Language: Spanish (native), English</li>
-      <li>Programming: Python, Java, JavaScript, C++</li>
-      <li>Web Development: HTML, CSS, React, Node.js</li>
-      <li>Cybersecurity: Linux Hardening, Penetration Testing, OpenSCAP</li>
-      <li>Networking: Cisco IOS, VLANs, Firewalls</li>
-      <li>Tools: Git, GitHub, Kali Linux, Metasploit, Wireshark</li>
-      <li>3D modeling: Currently working with UltiMaker Cura and OrcaSlicer</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">💻 Programming<br><small>Python, Java, JS, C++</small></div>
+      <div class="skill-card">🌐 Web Dev<br><small>HTML, CSS, React, Node.js</small></div>
+      <div class="skill-card">🔐 Cybersecurity<br><small>Linux Hardening, OpenSCAP</small></div>
+      <div class="skill-card">🧠 Languages<br><small>Spanish (native), English</small></div>
+      <div class="skill-card">📡 Networking<br><small>Cisco IOS, VLANs, Firewalls</small></div>
+      <div class="skill-card">🧰 Tools<br><small>Git, GitHub, Kali, Wireshark</small></div>
+      <div class="skill-card">🖨️ 3D Modeling<br><small>Cura, OrcaSlicer</small></div>
+    </div>
   </section>
 
   <section id="experience">
@@ -196,48 +226,41 @@
   </section>
 
   <section id="certs">
-  <h2>Certifications</h2>
-
-  <div class="cert">
-    <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
-    <p>Cisco Networking Academy — Certificate & Verified Badge</p>
-    <p><strong>Issued:</strong> May 19, 2024</p>
-  </div>
-
-  <div class="cert">
-    <h3>CCNA: Introduction to Networks</h3>
-    <p>Cisco Networking Academy — Certificate & Verified Badge</p>
-    <p><strong>Issued:</strong> March 17, 2024</p>
-  </div>
-
-  <div class="cert">
-    <h3>CompTIA Security+ (Expected June 2025)</h3>
-    <p>Studying core principles of risk management, cryptography, and threat detection.</p>
-  </div>
-
-  <div class="cert">
-    <h3>Cisco CCNA (In Progress)</h3>
-    <p>Focused on routing and switching fundamentals, network security, and troubleshooting.</p>
-  </div>
-</section>
-
+    <h2>Certifications</h2>
+    <div class="cert">
+      <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+      <p>Cisco Networking Academy — Certificate & Verified Badge</p>
+      <p><strong>Issued:</strong> May 19, 2024</p>
+    </div>
+    <div class="cert">
+      <h3>CCNA: Introduction to Networks</h3>
+      <p>Cisco Networking Academy — Certificate & Verified Badge</p>
+      <p><strong>Issued:</strong> March 17, 2024</p>
+    </div>
+    <div class="cert">
+      <h3>CompTIA Security+ (Expected June 2025)</h3>
+      <p>Studying core principles of risk management, cryptography, and threat detection.</p>
+    </div>
+    <div class="cert">
+      <h3>Cisco CCNA (In Progress)</h3>
+      <p>Focused on routing and switching fundamentals, network security, and troubleshooting.</p>
+    </div>
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>📧 ignacio.diaz.11@student.hlg.edu</p>
     <p>📞 +1 (573)501-7556</p>
-   <p>
-  <a href="https://github.com/NachoHLGU" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
-  </a>
-</p>
     <p>
-  
-  <a href="https://www.notion.so/Ignacio-Diaz-Digital-Portfolio-1ddcccc7b58380be8b05f62826c07645" target="_blank">
-    <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion Badge">
-  </a>
-</p>
-
+      <a href="https://github.com/NachoHLGU" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+      </a>
+    </p>
+    <p>
+      <a href="https://www.notion.so/Ignacio-Diaz-Digital-Portfolio-1ddcccc7b58380be8b05f62826c07645" target="_blank">
+        <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion Badge">
+      </a>
+    </p>
   </section>
 
   <footer>
