@@ -207,6 +207,27 @@
       line-height: 1.6;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+    .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
   </style>
 </head>
 <body>
@@ -308,24 +329,20 @@
     </div>
   </section>
 
-  <section id="3dprojects">
-    <h2>3D Projects</h2>
-    <div class="carousel">
-      <div class="carousel-item active">
-        <img src="https://makerworld.bblmw.com/makerworld/model/USa87d3ef85993d7/design/2025-04-20_a2def065796.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://makerworld.bblmw.com/makerworld/model/US7885a8d1672378/design/2025-02-19_b7ff803056a08.gif?x-oss-process=image/resize,w_1000/format,webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://makerworld.bblmw.com/makerworld/model/US58e6a691a9b90e/design/2024-12-18_d44625344f4ab.png?x-oss-process=image/resize,w_1000/format,webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://media.printables.com/media/prints/e041f69b-529d-4ab9-9dbd-eb7885c9d656/images/9383585_598c19ac-ec2e-42a8-bde7-947f9991de59_2a7d3bc0-7585-480e-822d-3563a95cac28/thumbs/inside/1600x1200/png/immagine-2025-03-31-194307.webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://makerworld.bblmw.com/makerworld/model/USaf3c20b1e54c0f/design/2024-12-01_4a4da2d778838.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://makerworld.bblmw.com/makerworld/model/USca505296a3a135/design/2024-03-03_4znprrnvryc1.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://media.printables.com/media/prints/386392/images/3826519_49857682-ee0a-4fb3-baf2-7e6ca6f4c3f6/thumbs/inside/1600x1200/png/aawolf3.webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        <img src="https://media.printables.com/media/prints/466874/images/3827241_0ed35c4c-937d-46c9-9cb5-38f646f44e83/thumbs/inside/1600x1200/png/bulbasaur.webp" alt="Descripción de la imagen" style="width:200px; border-radius:10px;">
-        
-        
-        
-      </div>
-    </div>
-  </section>
+  <section id="3d-gallery">
+  <h2>3D Print Gallery</h2>
+  <div class="image-gallery">
+    <img src="https://makerworld.bblmw.com/makerworld/model/USa87d3ef85993d7/design/2025-04-20_a2def065796.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Remote Caddy" class="gallery-image">
+    <img src="https://makerworld.bblmw.com/makerworld/model/US7885a8d1672378/design/2025-02-19_b7ff803056a08.gif?x-oss-process=image/resize,w_1000/format,webp" alt="Animated Print" class="gallery-image">
+    <img src="https://makerworld.bblmw.com/makerworld/model/US58e6a691a9b90e/design/2024-12-18_d44625344f4ab.png?x-oss-process=image/resize,w_1000/format,webp" alt="Mechanical Part" class="gallery-image">
+    <img src="https://media.printables.com/media/prints/e041f69b-529d-4ab9-9dbd-eb7885c9d656/images/9383585_598c19ac-ec2e-42a8-bde7-947f9991de59_2a7d3bc0-7585-480e-822d-3563a95cac28/thumbs/inside/1600x1200/png/immagine-2025-03-31-194307.webp" alt="Pokemon Pokeball" class="gallery-image">
+    <img src="https://makerworld.bblmw.com/makerworld/model/USaf3c20b1e54c0f/design/2024-12-01_4a4da2d778838.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Tool Holder" class="gallery-image">
+    <img src="https://makerworld.bblmw.com/makerworld/model/USca505296a3a135/design/2024-03-03_4znprrnvryc1.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="Dice Tower" class="gallery-image">
+    <img src="https://media.printables.com/media/prints/386392/images/3826519_49857682-ee0a-4fb3-baf2-7e6ca6f4c3f6/thumbs/inside/1600x1200/png/aawolf3.webp" alt="Wolf Bust" class="gallery-image">
+    <img src="https://media.printables.com/media/prints/466874/images/3827241_0ed35c4c-937d-46c9-9cb5-38f646f44e83/thumbs/inside/1600x1200/png/bulbasaur.webp" alt="Bulbasaur" class="gallery-image">
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
