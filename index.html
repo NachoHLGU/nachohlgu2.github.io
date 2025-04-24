@@ -155,6 +155,24 @@
     .skill-card:hover {
       transform: scale(1.03);
     }
+
+    #3dprojects img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      display: block;
+      margin: 1rem auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    #3dprojects p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #d0d0d0;
+    }
   </style>
 </head>
 <body>
@@ -172,14 +190,15 @@
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#certs">Certifications</a>
+    <a href="#3dprojects">3D Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
-      <div class="project">
+    <div class="project">
     <p>I am a passionate Computer Science student at HLGU with a strong interest in 3D modeling, cybersecurity, web development, and network architecture. My academic projects include configuring hardened Ubuntu servers, creating 3D animations in Unreal Engine, and building secure networking topologies.</p>
-        </div>
+      </div>
   </section>
 
   <section id="projects">
@@ -246,6 +265,16 @@
     <div class="cert">
       <h3>Cisco CCNA (In Progress)</h3>
       <p>Focused on routing and switching fundamentals, network security, and troubleshooting.</p>
+    </div>
+  </section>
+
+  <section id="3dprojects">
+    <h2>3D Projects</h2>
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img src="/mnt/data/2025-04-20_a2def065796.webp" alt="Kumiko Design Remote Caddy" />
+        <p><strong>Kumiko Remote Caddy:</strong> A modular 3D-printed design inspired by traditional Japanese latticework (Kumiko). Designed to organize remotes elegantly with a modern aesthetic.</p>
+      </div>
     </div>
   </section>
 
